@@ -28,7 +28,7 @@ while( a < nol + 1 ){
 
 // ---Using functions---
 
-let star = Function(n = 4)
+let star = function( n = 4 )
 {
   for (j = 1; j < n + 1; j++ ) {
     console.log( "*".repeat ( j ) );
@@ -36,3 +36,31 @@ let star = Function(n = 4)
 };
 
 star(5)
+
+
+// ---nested Loops---
+
+let ps = 4;
+let k = 1;
+let out = "" ;
+let l = 0;
+while( k < ps + 1 ){
+  while(l < k ){
+    out += "*"
+    console.log(out)
+    l++
+  }
+  k++
+}
+
+
+// ----OPTIMAL SOLUTION----
+
+let line = 7;
+for(let h = 1; h <= line; h++){
+  let str = "";
+  for(let p = 1; p <= h; p++){
+    str += "*";
+    console.log(str);
+  }
+}
